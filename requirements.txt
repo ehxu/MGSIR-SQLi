@@ -1,0 +1,29 @@
+# Target Python: 3.10+ (per README).
+#
+# Notes:
+# - Deep learning backends (TensorFlow/Keras, PyTorch) are platform/GPU-specific and live in the OS files.
+# - We keep numpy<2 for TensorFlow 2.15 / ecosystem compatibility.
+
+numpy<2
+pandas<3
+scipy<2
+scikit-learn
+xgboost==2.1.4
+
+gensim
+joblib
+chardet
+
+matplotlib
+seaborn
+shap
+adjustText
+
+transformers
+
+# TensorFlow/Keras (code imports `tensorflow` and `keras.*`; Keras 3 is not compatible with `keras.preprocessing`).
+tensorflow==2.15.*
+keras==2.15.*
+
+# PyTorch (CPU wheel by default from PyPI).
+torch

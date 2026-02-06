@@ -1,0 +1,5 @@
+# macOS dependencies (Apple Silicon supported).
+-r requirements.txt
+
+# Apple GPU acceleration for TensorFlow (optional but recommended on M1/M2/M3).
+tensorflow-metal
